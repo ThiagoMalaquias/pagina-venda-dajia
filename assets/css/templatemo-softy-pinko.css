@@ -64,6 +64,7 @@ html, body {
   -ms-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: linear-gradient(to right, #e45b47, #e74c22);
 }
 
 a {
@@ -86,7 +87,7 @@ global styles
 */
 html,
 body {
-  background: #fff;
+  background-image: linear-gradient(to right, #e45b47, #e74c22);
   font-family: "Raleway", sans-serif;
 }
 
@@ -102,7 +103,6 @@ body {
 
 .section {
   position: relative;
-  padding-top: 100px;
   padding-bottom: 80px;
 }
 
@@ -624,7 +624,7 @@ welcome
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: linear-gradient(to right, #e45b47, #e74c22);
+  background-image: url('../images/banner-bg.png');
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover; 
@@ -633,8 +633,7 @@ welcome
 
 .welcome-area .header-text {
   position: absolute;
-  top: 50%;
-  transform: translateY(-55%);
+  top: 20%;
   text-align: center;
   width: 100%;
 }
@@ -730,6 +729,42 @@ welcome
 features
 --------------------------------------------- 
 */
+
+.features-small-sobre {
+  cursor: pointer;
+  display: block;
+  background: #FFFFFF;
+  box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.10);
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  padding: 30px;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  position: relative;
+  margin-bottom: 30px;
+  margin-top:-200px;
+}
+
+.features-small-duvidas {
+  cursor: pointer;
+  display: block;
+  background: #FFFFFF;
+  box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.10);
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  padding: 30px;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  position: relative;
+  margin-bottom: 30px;
+}
+
 .features-small-item {
   cursor: pointer;
   display: block;
@@ -800,12 +835,6 @@ features
   z-index: 2;
 }
 
-.home-feature {
-  padding-bottom: 0px;
-  padding-top: 30px;
-  margin-top: -190px;
-  z-index: 9;
-}
 
 @media (max-width: 991px) {
   .home-feature {
